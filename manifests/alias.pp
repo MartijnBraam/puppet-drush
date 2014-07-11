@@ -1,4 +1,4 @@
-class aliasfile (
+define alias (
   $filename = $title,
   $owner    = 'root',
   $group    = 'root',
@@ -19,7 +19,7 @@ class aliasfile (
 
 }
 
-define aliasfile::alias(
+define alias::define(
   $alias         = $name,
   $aliasfile     = "",
   $url           = "",
@@ -32,7 +32,7 @@ define aliasfile::alias(
   $database_prefix = "",
 ) {
 
-  concat::fragment{ "alias_${alias}_${aliasfile}"
+  concat::fragment{ "alias_${alias}_${aliasfile}":
     target => $aliasfile,
     content => template("drush/alias.erb"),
     order  => "02",
