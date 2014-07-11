@@ -18,13 +18,13 @@ Specify installation directory
 
 All options:
 
-- **install_dir** /opt/drush
+- **install_dir** /opt/drush  
   Set installation directory for drush
-- **repository** https://github.com/drush-ops/drush.git
+- **repository** https://github.com/drush-ops/drush.git  
   The repository to clone from
-- **ref** master
+- **ref** master  
   The git ref to clone
-- **php_package** php5-cli
+- **php_package** php5-cli  
   This package is installed for drush
 
 
