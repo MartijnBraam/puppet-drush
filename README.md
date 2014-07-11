@@ -1,4 +1,5 @@
-drush
+puppet-drush
+============
 
 This is the drush module.
 
